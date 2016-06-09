@@ -37,7 +37,7 @@ resource "azurerm_network_interface" "vminstance" {
 }
 
 resource "azurerm_storage_account" "vminstance" {
-    name = "terraformvminstancesa"
+    name = "${var.storagename}"
     resource_group_name = "${azurerm_resource_group.vminstance.name}"
     location = "westus"
     account_type = "Standard_LRS"

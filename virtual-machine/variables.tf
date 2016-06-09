@@ -14,6 +14,9 @@ variable "region" {
 	description = ""
 	default = "East US"
 }
+variable "storagename" {
+	description = "The name of the storage account used by the Virtual Machine, must be unique to Azure!"
+}
 variable "computername" {
 	description = "Virtual Machine Computer Name"
 	default = "hostname"
